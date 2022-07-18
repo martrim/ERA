@@ -94,17 +94,5 @@ class ERA(tf.keras.layers.Layer):
             name=self.name + '/w_denominator',
             initializer=denom_initializer)
 
-        # Variables for watching the input
-        self.inputs = []
-        self._watch_inputs = False
-
-    def toggle_watch_inputs(self):
-        self._watch_inputs = not self._watch_inputs
-        if not self._watch_inputs:
-            self.inputs = []
-
-    def get_inputs(self):
-        return tf.concat(self.inputs, axis=0)
-
     def call(self, inputs):
         return era_function(inputs, self.numerator, self.denominator)
