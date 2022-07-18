@@ -13,7 +13,7 @@ where $a, b, c_i, d_i, e_i, f_i \in \mathbb{R}$ are real parameters for all $i$.
 
 The parameters of $\sigma$ are optimized during the training of the network. The parameters can be initialized so that $\sigma$ resembles a standard activation function like ReLU, Leaky ReLU, Swish or GELU. In contrast to prior work, they are also often stable when initialized randomly. We note that Swish initialization works often best in practice.
 
-ERAs work best when the pre-activation values are normalized by standard techniques like instance normalization for CNNs and layer normalization for MLPs. Normalization makes the pre-activation distribution evolve slowly training, which benefits the learning process.
+ERAs work best when the pre-activation values are normalized by standard techniques like instance normalization for CNNs and layer normalization for MLPs. Normalization makes the pre-activation distribution evolve slowly during training, which benefits the learning process.
 
 ## 3. Plots of Learned ERAs
 Plot of Swish-initialised ERA with denominator of degree 4:
