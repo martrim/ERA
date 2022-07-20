@@ -67,7 +67,6 @@ class ERA(tf.keras.layers.Layer):
         initialization = era_args.initialization
         num_numerator_weights = degree_denominator + 2
 
-        self.batch_size = 32
         self.num_channels = input_shape[-1]
         weight_shape_ending = [1] * len(input_shape)
         self.numerator_weight_shape = [num_numerator_weights] + weight_shape_ending
