@@ -1,8 +1,8 @@
 # ERA: Enhanced Rational Activations
 
 ## 1. Dependencies
-This is the repository of the paper ERA: Enhanced Rational Activations.
-The code uses ***TensorFlow*** 2.5. For other pip recommended pip packages, please check the requirements.txt file. To run on GPUs, we use CUDA 11.2.2 and CuDNN 8.1.0.77.
+This is the repository of the paper [ERA: Enhanced Rational Activations](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136800705.pdf).
+The code uses ***TensorFlow*** 2.5. (Code for PyTorch can be found [here](https://github.com/martrim/ERA-pytorch).) For other pip recommended pip packages, please check the requirements.txt file. To run on GPUs, we use CUDA 11.2.2 and CuDNN 8.1.0.77.
 
 ## 2. Enhanced Rational Activations
 
